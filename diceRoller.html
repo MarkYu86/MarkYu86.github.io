@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="diceFunction.js"></script>
+</head>
+<body>
+<button class="dicebtn" onclick="document.getElementById('result').textContent = rollDice4()">4FACES</button>
+<button class="dicebtn" onclick="document.getElementById('result').textContent = rollDice6()">6FACES</button>
+<button class="dicebtn" onclick="document.getElementById('result').textContent = rollDice10()">10FACES</button>
+<button class="dicebtn" onclick="document.getElementById('result').textContent = rollDice32()">32FACES</button>
+<p>Your have Rolled:</p>
+<span id="result"></span>
+</body>
+</html>
