@@ -87,6 +87,9 @@
     }
 }
     @media screen and (max-width:600px){
+#column{
+    width:100%
+}
 
 body{
     min-height: auto;
@@ -107,13 +110,12 @@ p{
     text-align: center;
 }
 aside{
-    border-left: 10px solid #a44a3f;
+    border: 10px solid #a44a3f;
     background-color:#f19c79;
     display: flex;
     flex-direction: column;
     float:left;
     justify-content:flex-start;
-    width:100%;
     text-align: center;
 }
 aside h1, aside h2{
@@ -142,7 +144,7 @@ main {
     background-color:#f6f4d2;
     display:flex;
     flex-direction: column;
-    border-right:10px solid #cbdfbd;
+    border:10px solid #cbdfbd;
     padding:10px;
 }
 main h2{
@@ -167,10 +169,8 @@ h4{
     flex:50%;
 }
 footer{
-    min-width:30em;
     padding:10px;
     display:flex;
-    flex-direction: row;
     background-color:#d4e09b;
     justify-content: center;
     color:#494949;
