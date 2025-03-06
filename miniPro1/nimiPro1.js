@@ -3,10 +3,10 @@ fetch("http://localhost:3000/cars")
   .then((response) => response.json())
   .then((json) => {
     allCars = json;
-    populateCarList(allCars);
+    popCars(allCars);
   });
 
-function populateCarList(cars){
+function popCars(cars){
   const carList = document.querySelector('#car-list')
   carList.innerHTML = "";//remove it later to check 
   cars.forEach((car)=>{
@@ -40,12 +40,8 @@ document.getElementById('filter').addEventListener('change',function(){
       if (chosenYear === "2010-" && carYear >= 2010) return true;
       return false;
     });
-    populateCarList(filteredCars);
+    popCars(filteredCars);
   }else{
-    populateCarList(allCars)
+    popCars(allCars)
   }
 })
-
-function homePage(){
-  document.getElementById('car-list');
-}
